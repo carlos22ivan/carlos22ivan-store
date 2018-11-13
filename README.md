@@ -5,7 +5,7 @@
 * git
 * mongodb 
 * mongodb-tools
-* node version 
+* node version >= 8.11
 
 ## Installation
 
