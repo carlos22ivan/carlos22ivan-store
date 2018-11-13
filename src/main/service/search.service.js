@@ -37,7 +37,7 @@ async function highlightBrands(query) {
         let brandsByRelevance = orderByRelevance(brands)
         brandsByRelevance.forEach(brand => {
                 let regexp = new RegExp(brand.name, 'gim')
-                query = query.replace(regexp, `<b>$&</b>`)
+                query = query.replace(regexp, `<span style="font-weight: bold">$&</span>`)
         })
         return query
 }
