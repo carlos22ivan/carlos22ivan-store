@@ -27,5 +27,6 @@
 
 * available port 12000
 * dump database folder  in dump/
+* config file in config/development.yml
 
 =^-^=
