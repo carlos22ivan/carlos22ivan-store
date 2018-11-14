@@ -18,7 +18,7 @@ describe('highlight test', () => {
                                 let html = res.text
                                 let $ = cheerio.load(html, {decodeEntities: false})
                                 let txtHighlight = $('.searchHighlight').html()
-                                if (txtHighlight !== 'carlos ivan <i>dresses</i> <b>HUGO <b>boss</b></b>')
+                                if (txtHighlight !== 'carlos ivan <i>dresses</i> <span style="font-weight: bold">HUGO <span style="font-weight: bold">boss</span></span>')
                                         throw new Error('search highlight invalid')
                         })
                         .end(done)
